@@ -7,7 +7,7 @@ function Layout() {
         <>
             <Header />
 
-            <main>
+            <main className="page-main">
                 <Outlet />
             </main>
 
