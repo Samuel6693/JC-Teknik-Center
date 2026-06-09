@@ -1,0 +1,38 @@
+.site-header {
+  width: min(var(--container-width), calc(100% - 40px));
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-logo {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.site-nav__link {
+  border-radius: var(--radius-sm);
+  color: var(--color-muted);
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.site-nav__link:hover,
+.site-nav__link--active {
+  background: #eff6ff;
+  color: var(--color-primary-dark);
+}
