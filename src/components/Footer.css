@@ -1,7 +1,5 @@
 .site-footer {
-  width: min(var(--container-width), calc(100% - 40px));
-  margin: 0 auto;
-  padding: 24px 0;
+  padding: 24px clamp(20px, 5vw, 64px);
   display: flex;
   justify-content: space-between;
   gap: 16px;
