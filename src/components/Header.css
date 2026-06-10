@@ -36,3 +36,14 @@
   background: #eff6ff;
   color: var(--color-primary-dark);
 }
+
+@media (max-width: 760px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+  }
+}

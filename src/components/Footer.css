@@ -17,3 +17,10 @@
   color: var(--color-text);
   font-weight: 700;
 }
+
+@media (max-width: 760px) {
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
