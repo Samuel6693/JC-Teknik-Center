@@ -1,0 +1,129 @@
+.about-page {
+    gap: 40px;
+}
+
+.about-hero {
+    display: grid;
+    gap: 18px;
+}
+
+.about-eyebrow {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 22px;
+}
+
+.about-card h2 {
+    margin: 0;
+    font-size: 1.15rem;
+}
+
+.about-card p {
+    margin-top: 10px;
+}
+
+.about-process {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 0.9fr 1.4fr;
+    padding: 28px;
+}
+
+.about-process h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.process-list {
+    display: grid;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.process-list li {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: auto 1fr;
+}
+
+.process-list span {
+    color: var(--color-primary);
+    font-weight: 800;
+}
+
+.process-list h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.process-list p {
+    margin-top: 6px;
+}
+
+.about-cta {
+    background: var(--color-primary);
+    border-radius: var(--radius-lg);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px;
+}
+
+.about-cta h2,
+.about-cta p {
+    color: inherit;
+}
+
+.about-cta h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.about-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.about-cta .button--primary {
+    background: #ffffff;
+    color: var(--color-primary-dark);
+}
+
+.about-cta .button--primary:hover {
+    background: #eff6ff;
+}
+
+@media (max-width: 800px) {
+
+    .about-grid,
+    .about-process {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
