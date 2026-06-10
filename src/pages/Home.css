@@ -94,9 +94,45 @@
   font-weight: 600;
 }
 
+.promo-section {
+  border-radius: var(--radius-lg);
+  background: var(--color-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+}
+
+.promo-section .home-eyebrow,
+.promo-section p,
+.promo-section h2 {
+  color: inherit;
+}
+
+.promo-section h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.promo-section .button--primary {
+  background: #ffffff;
+  color: var(--color-primary-dark);
+}
+
+.promo-section .button--primary:hover {
+  background: #eff6ff;
+}
+
 @media (max-width: 800px) {
     .home-grid,
     .trust-section {
         grid-template-columns: 1fr;
     }
+
+    .promo-section {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

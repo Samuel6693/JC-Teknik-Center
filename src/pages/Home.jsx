@@ -56,6 +56,21 @@ function Home() {
         </ul>
       </div>
 
+      <div className="promo-section">
+        <div>
+          <p className="home-eyebrow">Utvalt just nu</p>
+          <h2>Begagnad elektronik och tillbehör i butik</h2>
+          <p>
+            Lyft fram aktuella produkter, populära tillbehör eller kampanjer
+            som kunder enkelt kan hitta i webbshoppen.
+          </p>
+        </div>
+
+        <Link className="button button--primary" to="/webbshop">
+          Se produkter
+        </Link>
+      </div>
+
     </section>
   )
 }
