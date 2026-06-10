@@ -1,5 +1,12 @@
+import "./Footer.css"
+
 function Footer() {
-  return <h1>Footer</h1>
+  return (
+    <footer className="site-footer">
+      <p className="site-footer__brand">JC Teknik Center</p>
+      <p>Reparationer, webbshop och personlig service.</p>
+    </footer>
+  )
 }
 
 export default Footer
