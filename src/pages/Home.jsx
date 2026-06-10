@@ -38,6 +38,24 @@ function Home() {
           <p>Tydlig kontakt, garantiinformation och hjälp nära kunden.</p>
         </article>
       </div>
+
+      <div className="trust-section">
+        <div>
+          <p className="home-eyebrow">Tryggt val</p>
+          <h2>Service som bygger förtroende</h2>
+          <p>
+            Tydlig kommunikation, garanti på utförda reparationer och hjälp som
+            gör det enkelt för kunden att känna sig trygg.
+          </p>
+        </div>
+
+        <ul className="trust-list">
+          <li>Garanti på reparationer</li>
+          <li>Snabb felsökning och tydliga priser</li>
+          <li>Personlig service i butik</li>
+        </ul>
+      </div>
+
     </section>
   )
 }
