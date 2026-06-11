@@ -10,11 +10,20 @@ const repairTypes = [
   "Annat",
 ]
 
+const bookingTimes = ["10:00", "11:00", "13:00", "14:00", "15:00"]
+const unavailableTimes = ["11:00", "14:00"]
+
 function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [selectedTime, setSelectedTime] = useState("")
 
   function handleSubmit(event) {
     event.preventDefault()
+
+    if (!selectedTime) {
+      return
+    }
+
     setIsSubmitted(true)
   }
 
@@ -65,6 +74,42 @@ function Contact() {
             <input name="date" required type="date" />
           </label>
 
+          <fieldset className="time-picker">
+            <legend>Önskad tid</legend>
+
+            <div className="time-options">
+              {bookingTimes.map((time) => {
+                const isUnavailable = unavailableTimes.includes(time)
+
+                return (
+                  <label
+                    className={
+                      isUnavailable
+                        ? "time-option time-option--disabled"
+                        : "time-option"
+                    }
+                    key={time}
+                  >
+                    <input
+                      checked={selectedTime === time}
+                      disabled={isUnavailable}
+                      name="time"
+                      onChange={() => setSelectedTime(time)}
+                      required
+                      type="radio"
+                      value={time}
+                    />
+                    {time}
+                  </label>
+                )
+              })}
+            </div>
+
+            <p className="time-helper">
+              Grå tider är upptagna i demo-läget.
+            </p>
+          </fieldset>
+
           <label>
             Meddelande
             <textarea name="message" rows="5" placeholder="Beskriv problemet kort" />
@@ -76,8 +121,7 @@ function Contact() {
 
           {isSubmitted && (
             <p className="booking-success">
-              Tack! Din bokningsförfrågan är registrerad i demo-läget.
-            </p>
+              Tack! Din bokningsförfrågan för {selectedTime} är registrerad i demo-läget.            </p>
           )}
         </form>
 
