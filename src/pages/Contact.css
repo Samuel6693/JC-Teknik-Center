@@ -1,0 +1,90 @@
+.contact-page {
+    gap: 40px;
+}
+
+.contact-hero {
+    display: grid;
+    gap: 18px;
+}
+
+.contact-eyebrow {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-layout {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1.4fr 0.8fr;
+}
+
+.booking-form,
+.contact-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+}
+
+.booking-form {
+    display: grid;
+    gap: 16px;
+}
+
+.booking-form label {
+    color: var(--color-text);
+    display: grid;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    padding: 12px;
+}
+
+.booking-form textarea {
+    resize: vertical;
+}
+
+.booking-success {
+    background: #ecfdf5;
+    border: 1px solid #bbf7d0;
+    border-radius: var(--radius-sm);
+    color: #166534;
+    padding: 12px;
+}
+
+.contact-card h2 {
+    margin: 0;
+}
+
+.contact-card ul {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    border-color: var(--color-primary);
+    outline: 3px solid #dbeafe;
+}
+
+@media (max-width: 520px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form .button {
+        width: 100%;
+    }
+}
