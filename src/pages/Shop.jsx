@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react"
+import { Link } from "react-router-dom"
 import { productCategories, products } from "../data/products"
 import "./Shop.css"
 
@@ -62,7 +63,9 @@ function Shop() {
 
             <div className="product-card__content">
               <p className="product-card__category">{product.category}</p>
-              <h2>{product.name}</h2>
+              <h2>
+                <Link to={`/webbshop/${product.id}`}>{product.name}</Link>
+              </h2>
               <p>{product.description}</p>
             </div>
 
