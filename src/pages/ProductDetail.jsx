@@ -10,7 +10,7 @@ function formatPrice(price) {
   }).format(price)
 }
 
-function ProductDetail() {
+function ProductDetail({ onAddToCart }) {
   const { productId } = useParams()
   const product = products.find((item) => item.id === productId)
 
@@ -49,7 +49,9 @@ function ProductDetail() {
             <span>{product.stockStatus}</span>
           </div>
 
-          <button className="button button--primary" type="button">
+          <button className="button button--primary"
+            onClick={() => onAddToCart(product)}
+            type="button">
             Lägg i kundvagn
           </button>
         </div>

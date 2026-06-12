@@ -6,6 +6,7 @@ const navLinks = [
   { label: "Om oss", path: "/om-oss" },
   { label: "Tjänster", path: "/tjanster" },
   { label: "Webbshop", path: "/webbshop" },
+  { label: "Kundvagn", path: "/kundvagn" },
   { label: "Kontakt", path: "/kontakt" },
   { label: "Recensioner", path: "/recensioner" },
   { label: "Admin", path: "/admin" },
