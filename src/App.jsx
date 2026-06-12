@@ -8,6 +8,7 @@ import Shop from "./pages/Shop"
 import Contact from "./pages/Contact"
 import Reviews from "./pages/Reviews"
 import Admin from "./pages/Admin"
+import ProductDetail from "./pages/ProductDetail"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="om-oss" element={<About />} />
         <Route path="tjanster" element={<Services />} />
         <Route path="webbshop" element={<Shop />} />
+        <Route path="webbshop/:productId" element={<ProductDetail />} />
         <Route path="kontakt" element={<Contact />} />
         <Route path="recensioner" element={<Reviews />} />
         <Route path="admin" element={<Admin />} />

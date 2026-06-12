@@ -51,6 +51,15 @@
   overflow: hidden;
 }
 
+.product-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card h2 a:hover {
+  color: var(--color-primary-dark);
+}
+
 .product-card__media {
   align-items: center;
   background: #eef2ff;
